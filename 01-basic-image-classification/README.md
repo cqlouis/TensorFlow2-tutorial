@@ -193,7 +193,7 @@ new_model = keras.models.load_model('model.h5')
 new_model.evaluate(test_dataset)
 ```
 
-However, there is one caveat: model created by [sub-classing](https://keras.io/models/about-keras-models/#model-subclassing) can not be saved by ```model.save()```. This is because sub-classing defines model's topology as Python code (rather than as a static graph of layers). That means the model's topology cannot be inspected or serialized. As a result, the following methods and attributes are not available for subclassed models:
+However, there is one caveat(警告; 告诫): model created by [sub-classing](https://keras.io/models/about-keras-models/#model-subclassing) can not be saved by ```model.save()```. This is because sub-classing defines model's topology as Python code (rather than as a static graph of layers). That means the model's topology cannot be inspected or serialized. As a result, the following methods and attributes are not available for subclassed models:
 
 ```
 model.inputs and model.outputs.
