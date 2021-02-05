@@ -1,8 +1,8 @@
 # TensorFlow 2 Tutorial I: Image Classification Basics
 
-TensorFlow 2 is coming. If you are used to coding in TensorFlow 1.x, things are about to change. Coding in TensorFlow 2.0 is imperative, free form sessions, and a lot of Keras.
+TensorFlow 2 is coming. If you are used to coding in TensorFlow 1.x, things are about to change. Coding in TensorFlow 2.0 is imperative(重要紧急的; 迫切的;), free form sessions, and a lot of Keras.
 
-This tutorial explains the basics of TensorFlow 2 with image classification as an example. We will cover:
+In this tutorial, We will cover:
 * Data Pipeline
 * Model Pipeline
 * Multiple-GPU
