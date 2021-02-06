@@ -228,7 +228,7 @@ test_dataset = test_dataset.map(preprocess).batch(BS_PER_GPU*NUM_GPUS)
 
 ## Callbacks
 
-Often we need to customize the training. For example, log statistics during the training for debugging and optimizing the network; implement bespoken learning rate schedule to improve the efficiency of training. In TensorFlow 2, customization of the training is supported via callbacks.
+Often we need to customize the training. For example, log statistics during the training for debugging and optimizing the network; implement bespoken(显示，证明) learning rate schedule to improve the efficiency of training. In TensorFlow 2, customization of the training is supported via callbacks.
 
 
 **Tensorboard** 
