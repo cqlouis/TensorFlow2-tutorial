@@ -2,7 +2,7 @@
 
 This tutorial explains how to use checkpoint to record TensorFlow models. 
 
-You may wonder why to bother knowing checkpoint as one of the previous tutorials have already introduced how to save and restore TensorFlow models. The answer is checkpoint enables model snapping not only at the end of a training job but also after every epoch. This makes model restoration more flexible, especially for training jobs that last for a long period of time.
+You may wonder why to bother(花费时间精力(做某事)) knowing checkpoint as one of the previous tutorials have already introduced how to save and restore TensorFlow models. The answer is checkpoint enables model snapping not only at the end of a training job but also after every epoch. This makes model restoration more flexible, especially for training jobs that last for a long period of time.
 
 TensorFlow 2 offers Keras as its high-level API. As we have seen in the previous tutorial, Keras uses the ```Model.fit``` function to execute the training and hides the loop of training epochs from end users. The way to customize the training after each epoch has to be done via ```callback``` functions. We have seen how to customize the learning rate, and how to log statistics using the ```LearningRateScheduler``` and ```TensorBoard``` callbacks. 
 
