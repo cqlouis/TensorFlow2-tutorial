@@ -1,6 +1,6 @@
 Distributed training allows scaling up deep learning task so bigger models can be learned or training can be conducted at a faster pace. In a previous tutorial, we discussed how to use ```MirroredStrategy``` to achieve multi-GPU training within a single node (physical machine). In this tutorial, we will explain how to do distributed training across multiple nodes. This tutorial includes:
 
-* Code boilerplate for multi-node distributed training.
+* Code boilerplate((可供模仿的)样板，) for multi-node distributed training.
 * Example code runs multiple machines.
 
 To reproduce this tutorial, please refer to this [distributed training with TensorFlow 2 github repository](https://github.com/lambdal/TensorFlow2-tutorial/tree/master/05-distributed-training). 
