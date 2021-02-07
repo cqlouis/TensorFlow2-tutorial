@@ -47,7 +47,7 @@ train_dataset = tf.data.Dataset.from_tensor_slices((train_images_path, train_lab
 
 The pre-processing function is more complicated now: 
 * First, we need to read the images from their paths.
-* Second, since each image is of different sizes, we need to resize them so they can be batch pre-processed. It is important to preserve the aspect ratio of each image during resizing. Otherwise, the objects (dogs in this case) will be severely distorted, which in our experiment caused over 10% reduction of testing accuracy.
+* Second, since each image is of different sizes, we need to resize them so they can be batch pre-processed. It is important to preserve the aspect ratio(纵横比) of each image during resizing. Otherwise, the objects (dogs in this case) will be severely distorted, which in our experiment caused over 10% reduction of testing accuracy.
 * For data augmentation, during training we first resize each image, so its width is between a randomly generated integer between 256 and 512, then randomly crop a 224x224 sub-picture out of it. During testing, we resize the image, so its width is 256, and then central crop a 224x224 sub-picture.
 * During training, we also do random horizontal flipping
 * ImageNet's mean RGB value is subtracted from all images. 
