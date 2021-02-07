@@ -30,7 +30,7 @@ or
 TF_CONFIG='{"cluster": {"worker": ["10.1.10.58:12345", "10.1.10.250:12345"]}, "task": {"index": 0, "type": "worker"}}' python worker.py
 ```
 
-The ```cluster``` field is the same across all nodes. It describes how the cluster is set up. In this case, our cluster only has two worker nodes, whose ```IP:port``` information is listed in the ```worker``` array. The ```task``` field varies from node to node. It specifies the type and index of the node, which is then used to fetch details from the ```cluster``` field and given to the task manager to divvy up the work. In this case, this config file indicates the training job runs on worker 0, which is ```"10.1.10.58:12345"```
+The ```cluster``` field is the same across all nodes. It describes how the cluster is set up. In this case, our cluster only has two worker nodes, whose ```IP:port``` information is listed in the ```worker``` array. The ```task``` field varies from node to node. It specifies the type and index of the node, which is then used to fetch details from the ```cluster``` field and given to the task manager to divvy up(分摊，分享（食物、金钱等）) the work. In this case, this config file indicates the training job runs on worker 0, which is ```"10.1.10.58:12345"```
 
 We need to customize this python snippet for each node. So the second node will have ```'task': {'type': 'worker', 'index': 1}```. 
 
